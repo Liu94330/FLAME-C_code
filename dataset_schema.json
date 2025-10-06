@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "dialog_sample": {
+    "dialog_id": "string",
+    "turn_id": "int",
+    "lang": "zh|en|mix",
+    "scenario_key": "string",
+    "participant_id": "string",
+    "difficulty": "easy|hard",
+    "user": {
+      "text": "string",
+      "self_report": {
+        "primary_emotion": "enum",
+        "intensity": "enum",
+        "VAD": {
+          "V": "1-7",
+          "A": "1-7",
+          "D": "1-7"
+        }
+      }
+    },
+    "ai_candidates": [
+      {
+        "style": "Warm|Professional|Humor",
+        "text": "string",
+        "safety_flags": []
+      },
+      "..."
+    ],
+    "ratings": {
+      "per_candidate": [
+        {
+          "style": "...",
+          "understanding": "1-7",
+          "empathy": "1-7",
+          "helpfulness": "1-7"
+        }
+      ],
+      "pairwise": [
+        {
+          "better_on": "understanding|helpfulness",
+          "A": "style",
+          "B": "style"
+        }
+      ]
+    },
+    "post_state": {
+      "primary_emotion": "enum",
+      "VAD": {
+        "V": "1-7",
+        "A": "1-7",
+        "D": "1-7"
+      },
+      "relief_score": "1-7"
+    },
+    "appraisal": {
+      "goal_congruence": "1-7",
+      "controllability": "1-7",
+      "social_threat": "1-7",
+      "expectancy_violation": "1-7",
+      "agency": "self|other|situation"
+    },
+    "quality": {
+      "gold_check": "bool",
+      "annotator_agreement": {
+        "kappa_emotion": "0-1 (optional)"
+      }
+    }
+  }
+}

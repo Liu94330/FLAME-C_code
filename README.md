@@ -4,6 +4,24 @@ A **runnable** PyTorch project for the Emotion Understanding Dataset (EUD) v1.0 
 It builds pointwise regression samples and pairwise ranking samples, then trains a BERT-based scorer to predict
 three dimensions per response: **understanding, empathy, helpfulness**. Validation monitors the mean score.
 
+# Environment
+
+| Component     | Spec                          |
+|---------------|-------------------------------|
+| GPU           | NVIDIA RTX 2080 Ti            |
+| CPU           | 12 cores                      |
+| RAM           | 43 GB                         |
+| OS            | Ubuntu 20.04                  |
+| Python        | 3.10                          |
+| PyTorch       | 1.11.0                        |
+| CUDA          | ≤ 12.4                        |
+
+# Datasets
+
+Emotion Understanding Dataset (EUD)
+Source: Kaggle – Emotion Understanding Dataset (CC0)
+Link: kaggle.com/datasets/kiddkaito/emotion-understanding-dataset
+
 ## 1. Setup
 
 ```bash

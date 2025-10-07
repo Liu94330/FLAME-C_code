@@ -1,4 +1,4 @@
-# EUD Simple Runner (Pointwise + Pairwise)
+# FLAME-C_code (Pointwise + Pairwise)
 
 A **runnable** PyTorch project for the Emotion Understanding Dataset (EUD) v1.0 (the zip you uploaded).
 It builds pointwise regression samples and pairwise ranking samples, then trains a BERT-based scorer to predict
